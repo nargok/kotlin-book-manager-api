@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
 	id("org.springframework.boot") version "2.5.0"
 	id("io.spring.dependency-management") version "1.0.11.RELEASE"
-	id("com.arenagod.MybatisGenerator") version "1.4"
+	id("com.arenagod.gradle.MybatisGenerator") version "1.4"
 	kotlin("jvm") version "1.5.10"
 	kotlin("plugin.spring") version "1.5.10"
 }
