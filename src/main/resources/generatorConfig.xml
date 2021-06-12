@@ -8,7 +8,7 @@
         <commentGenerator>
             <property name="suppressDate" value="true"/>
         </commentGenerator>
-        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
                         connectionURL="jdbc:mysql://127.0.0.1:3316/book_manager"
                         userId="root"
                         password="mysql">
@@ -20,12 +20,12 @@
         <!-- SELECT 結果等を格納するドメインモデルを生成する設定 -->
         <javaModelGenerator
                 targetPackage="com.book.manager.infrastructure.database.record"
-                targetProject="/src/main/kotlin">
+                targetProject="src/main/kotlin">
         </javaModelGenerator>
         <!-- マッパークラスを生成する設定 -->
         <javaClientGenerator
                 targetPackage="com.book.manager.infrastructure.database.mapper"
-                targetProject="/src/main/kotlin">
+                targetProject="src/main/kotlin">
         </javaClientGenerator>
         <table tableName="%">
             <columnOverride column="role_type" typeHandler="org.apache.ibatis.type.EnumTypeHandler"
